@@ -1,6 +1,6 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1717710094357,
-  "repoUrl": "https://github.com/awslabs/soci-snapshotter",
+  "lastUpdate": 1718236017725,
+  "repoUrl": "https://github.com/inf3rnus/soci-snapshotter",
   "entries": {
     "Soci Benchmark": [
       {
@@ -7383,6 +7383,48 @@ window.BENCHMARK_DATA = {
           {
             "name": "SociFullECR-public-ffmpeg-pullTaskDuration",
             "value": 1.5345,
+            "unit": "Seconds",
+            "extra": "P90"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "macedonv@amazon.com",
+            "name": "Austin Vazquez",
+            "username": "austinvazquez"
+          },
+          "committer": {
+            "email": "kern.walster@gmail.com",
+            "name": "Kern Walster",
+            "username": "Kern--"
+          },
+          "distinct": true,
+          "id": "184d564b9003d0fca62b6e8cc331bb5451a06bc3",
+          "message": "Add workflow to label pull requests\n\nThis change adds a GitHub Actions workflow to label PR's based on their\nchanges. The following labels will be applied to pull requests:\n\n- `documentation` - updates to `**/*.md`\n- `go` - updates to `**/*.go`\n- `testing` - updates to `**/*_test.go`\n- `github_actions` - updates to `.github/`\n- `benchmarking` - updates to `benchmark/`\n- `dependencies` - updates to `go.(mod|sum)`\n\nSigned-off-by: Austin Vazquez <macedonv@amazon.com>",
+          "timestamp": "2024-06-12T16:32:52-07:00",
+          "tree_id": "f719eade37bc161b09ccdd52d683701e38a5901d",
+          "url": "https://github.com/inf3rnus/soci-snapshotter/commit/184d564b9003d0fca62b6e8cc331bb5451a06bc3"
+        },
+        "date": 1718236013857,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "SociFullECR-public-ffmpeg-lazyTaskDuration",
+            "value": 0.1165,
+            "unit": "Seconds",
+            "extra": "P90"
+          },
+          {
+            "name": "SociFullECR-public-ffmpeg-localTaskDuration",
+            "value": 0.008,
+            "unit": "Seconds",
+            "extra": "P90"
+          },
+          {
+            "name": "SociFullECR-public-ffmpeg-pullTaskDuration",
+            "value": 1.6509999999999998,
             "unit": "Seconds",
             "extra": "P90"
           }
