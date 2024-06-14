@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1718236016303,
+  "lastUpdate": 1718393028275,
   "repoUrl": "https://github.com/inf3rnus/soci-snapshotter",
   "entries": {
     "Soci Benchmark": [
@@ -7302,6 +7302,48 @@ window.BENCHMARK_DATA = {
           {
             "name": "SociFullECR-public-node-pullTaskDuration",
             "value": 2.096,
+            "unit": "Seconds",
+            "extra": "P90"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "macedonv@amazon.com",
+            "name": "Austin Vazquez",
+            "username": "austinvazquez"
+          },
+          "committer": {
+            "email": "55906459+austinvazquez@users.noreply.github.com",
+            "name": "Austin Vazquez",
+            "username": "austinvazquez"
+          },
+          "distinct": false,
+          "id": "847f01a0ea0a43bc090e72daa3f887ef4c51394f",
+          "message": "Fix label workflow configuration\n\nSigned-off-by: Austin Vazquez <macedonv@amazon.com>",
+          "timestamp": "2024-06-14T11:13:07-07:00",
+          "tree_id": "7a0e82f4fadb59fd71da78915205bac198da9565",
+          "url": "https://github.com/inf3rnus/soci-snapshotter/commit/847f01a0ea0a43bc090e72daa3f887ef4c51394f"
+        },
+        "date": 1718393027524,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "SociFullECR-public-node-lazyTaskDuration",
+            "value": 4.54,
+            "unit": "Seconds",
+            "extra": "P90"
+          },
+          {
+            "name": "SociFullECR-public-node-localTaskDuration",
+            "value": 0.4445,
+            "unit": "Seconds",
+            "extra": "P90"
+          },
+          {
+            "name": "SociFullECR-public-node-pullTaskDuration",
+            "value": 1.5939999999999999,
             "unit": "Seconds",
             "extra": "P90"
           }
